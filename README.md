@@ -26,7 +26,7 @@ python init_db.py
 ```bash
 python app.py
 ```
-API Endpoints:
+### API Endpoints:
 
 - `POST /tasks:` Create a new task.
 - `GET /tasks:` Get a list of tasks.
