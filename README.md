@@ -1,72 +1,34 @@
-Flask Todo API
-Uma API RESTful simples construída com Flask para gerenciar tarefas. Este projeto serve como exemplo de como construir uma API que permite a criação, leitura, atualização e exclusão de tarefas usando Flask, SQLAlchemy e outras ferramentas.
+# Flask Todo API
 
-Funcionalidades
-Criar uma tarefa
-Obter uma lista de tarefas
-Atualizar uma tarefa
-Excluir uma tarefa
-Tecnologias Usadas
-Flask: Framework web em Python para construir APIs.
-SQLAlchemy: ORM para manipulação do banco de dados.
-Flask-RESTful: Extensão do Flask para construção de APIs RESTful.
-SQLite: Banco de dados utilizado para persistência de dados (pode ser facilmente alterado para outro banco como MySQL ou PostgreSQL).
-Como Rodar o Projeto
-Clone o repositório para sua máquina local:
+This is a simple RESTful API built with Flask and SQLAlchemy to manage tasks.
 
-git clone https://github.com/seu-usuario/flask-todo-api.git
+## Features:
+- Create, read, update, and delete tasks.
+- Simple SQLite database for task management.
 
-Navegue até o diretório do projeto:
+## Getting Started:
 
-cd flask-todo-api
+1. Clone this repository.
 
-Crie um ambiente virtual e ative-o:
+2. Set up a virtual environment:
+   ```bash
+   python -m venv venv
 
-python -m venv venv
-
-No Windows:
-
-venv\Scripts\activate
-
-No Linux/Mac:
-
-source venv/bin/activate
-
-Instale as dependências do projeto:
-
-pip install -r requirements.txt
-
-Inicialize o banco de dados:
-
+3. Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
+4. Initialize the database:
+```bash
 python init_db.py
-
-Inicie a aplicação Flask:
-
+```
+5. Run the app:
+```bash
 python app.py
+```
+API Endpoints:
 
-Acesse a API em http://127.0.0.1:5000/.
-
-Endpoints da API
-GET /tasks
-Retorna a lista de todas as tarefas.
-POST /tasks
-Cria uma nova tarefa.
-Exemplo de corpo da requisição:
-json
-Copiar
-Editar
-{
-  "title": "Aprender Flask",
-  "description": "Construir uma API RESTful",
-  "status": "pending"
-}
-PUT /tasks/<id>
-Atualiza uma tarefa existente.
-DELETE /tasks/<id>
-Exclui uma tarefa.
-Como Contribuir
-Fork este repositório.
-Crie uma nova branch para suas modificações: git checkout -b minha-nova-funcionalidade.
-Faça suas alterações e commit: git commit -am 'Adicionando nova funcionalidade'.
-Envie para o repositório remoto: git push origin minha-nova-funcionalidade.
-Abra um Pull Request.
+POST /tasks: Create a new task.
+GET /tasks: Get a list of tasks.
+PUT /tasks/<id>: Update a task.
+DELETE /tasks/<id>: Delete a task.
