@@ -28,7 +28,7 @@ python app.py
 ```
 API Endpoints:
 
-POST /tasks: Create a new task.
-GET /tasks: Get a list of tasks.
-PUT /tasks/<id>: Update a task.
-DELETE /tasks/<id>: Delete a task.
+`POST /tasks:` Create a new task.
+`GET /tasks:` Get a list of tasks.
+`PUT /tasks/<id>:` Update a task.
+`DELETE /tasks/<id>:` Delete a task.
